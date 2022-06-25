@@ -1,5 +1,3 @@
 <template>
-    <div>
-        SELECT ONE CAR
-    </div>
+  <div>SELECT ONE CAR</div>
 </template>

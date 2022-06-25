@@ -1,5 +1,3 @@
 <template>
-    <div>
-        SELECT PACK
-    </div>
+  <div>SELECT PACK</div>
 </template>

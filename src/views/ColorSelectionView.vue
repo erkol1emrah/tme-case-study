@@ -1,5 +1,3 @@
 <template>
-    <div>
-        SELECT ONE COLOR
-    </div>
+  <div>SELECT ONE COLOR</div>
 </template>
