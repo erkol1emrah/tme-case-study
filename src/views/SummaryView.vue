@@ -4,6 +4,8 @@
 
 <style>
 #summary {
-  margin-top: 100px;
+  height: 604px;
+  align-items: center;
+  justify-content: center;
 }
 </style>

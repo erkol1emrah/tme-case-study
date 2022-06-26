@@ -1,4 +1,6 @@
-<template>SEPARATOR</template>
+<template>
+  <div id="separator"></div>
+</template>
 
 <script>
 export default {
@@ -6,4 +8,11 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style>
+#separator {
+  width: 1px;
+  height: 51px;
+  background-color: var(--dark-gray);
+  opacity: 0.18;
+}
+</style>

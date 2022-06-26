@@ -26,5 +26,6 @@ export default {
   width: 100%;
   flex-flow: column nowrap;
   align-items: center;
+  margin-bottom: 20px;
 }
 </style>

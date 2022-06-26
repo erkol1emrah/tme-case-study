@@ -15,5 +15,6 @@ export default {
   width: 107px;
   height: 61px;
   margin-top: 40px;
+  user-select: none;
 }
 </style>

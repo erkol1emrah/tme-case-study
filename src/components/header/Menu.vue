@@ -40,7 +40,6 @@ export default {
 #menu {
   font-family: "Qanelas Bold";
   font-size: 14px;
-  font-weight: 200;
   line-height: 17px;
   letter-spacing: 1px;
   text-align: center;
@@ -54,6 +53,7 @@ export default {
   color: var(--black);
   margin-right: 57.5px;
   opacity: 0.19;
+  user-select: none;
 }
 
 .menu-item:last-child {
@@ -62,9 +62,6 @@ export default {
 
 .menu-item:hover {
   opacity: 1;
-}
-
-.menu-item-text {
 }
 
 .underline {
