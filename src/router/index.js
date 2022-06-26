@@ -18,8 +18,8 @@ const router = createRouter({
       component: ColorSelectionView,
     },
     {
-      path: "/select-pack",
-      name: "select-pack",
+      path: "/select-packs",
+      name: "select-packs",
       component: PackSelectionView,
     },
     {

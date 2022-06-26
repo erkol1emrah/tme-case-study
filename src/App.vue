@@ -1,7 +1,7 @@
 <template>
   <Header />
   <RouterView />
-  <Footer />
+  <!--    <Footer/>-->
 </template>
 
 <script>
@@ -18,4 +18,12 @@ export default {
 
 <style>
 @import "@/assets/base.css";
+
+#app {
+  min-width: 320px;
+  max-width: 1440px;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: auto;
+}
 </style>

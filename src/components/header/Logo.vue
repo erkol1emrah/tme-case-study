@@ -1,4 +1,8 @@
-<template>LOGO</template>
+<template>
+  <div id="logo">
+    <img src="images/logo.png" />
+  </div>
+</template>
 
 <script>
 export default {
@@ -6,4 +10,10 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style>
+#logo {
+  width: 107px;
+  height: 61px;
+  margin-top: 40px;
+}
+</style>

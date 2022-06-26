@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="header">
     <Bullet />
     <Logo />
     <Menu />
@@ -21,4 +21,10 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style>
+#header {
+  width: 100%;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+</style>

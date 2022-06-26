@@ -1,4 +1,4 @@
-<template>BULLET</template>
+<template><div id="bullet"></div></template>
 
 <script>
 export default {
@@ -6,4 +6,12 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style>
+#bullet {
+  width: 80px;
+  height: 80px;
+  background-color: #d8d8d8;
+  border-radius: 50%;
+  margin-top: -55px;
+}
+</style>
