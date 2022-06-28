@@ -1,224 +1,206 @@
 :root {
-  --white: #ffffff;
-  --light-gray: #f2f2f2;
-  --dark-gray: #979797;
-  --black: #1c1c1c;
+	--white: #ffffff;
+	--light-gray: #f2f2f2;
+	--dark-gray: #979797;
+	--black: #1c1c1c;
 }
 
 :root {
-  --color-background: var(--light-gray);
-  --color-text: var(--black);
+	--color-background: var(--light-gray);
+	--color-text: var(--black);
 
-  --section-gap: 160px;
+	--section-gap: 160px;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  margin: 0;
-  font-weight: normal;
+	box-sizing: border-box;
+	margin: 0;
+	font-weight: normal;
 }
 
 body {
-  min-height: 100vh;
-  color: var(--color-text);
-  background: var(--color-background);
+	min-height: 100vh;
+	color: var(--color-text);
+	background: var(--color-background);
 }
 
 div {
-  display: flex;
+	display: flex;
 }
 
 a {
-  text-decoration: none;
-  color: var(--color-text);
+	text-decoration: none;
+	color: var(--color-text);
 }
 
 .show {
-  display: block;
+	display: block;
 }
 
 .hide {
-  display: none;
+	display: none;
 }
 
 @font-face {
-  font-family: "Qanelas Thin";
-  font-weight: 100;
-  font-style: normal;
-  font-display: auto;
-  src: local("Qanelas"),
-    url("/fonts/Qanelas/Qanelas-Thin.woff2") format("woff2"),
-    url("/fonts/Qanelas/Qanelas-Thin.woff") format("woff");
+	font-family: 'Qanelas Thin';
+	font-weight: 100;
+	font-style: normal;
+	font-display: auto;
+	src: local('Qanelas'), url('/fonts/Qanelas/Qanelas-Thin.woff2') format('woff2'),
+		url('/fonts/Qanelas/Qanelas-Thin.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Qanelas Thin Italic";
-  font-weight: 100;
-  font-style: normal;
-  font-display: auto;
-  src: local("Qanelas"),
-    url("/fonts/Qanelas/Qanelas-ThinItalic.woff2") format("woff2"),
-    url("/fonts/Qanelas/Qanelas-ThinItalic.woff") format("woff");
+	font-family: 'Qanelas Thin Italic';
+	font-weight: 100;
+	font-style: normal;
+	font-display: auto;
+	src: local('Qanelas'), url('/fonts/Qanelas/Qanelas-ThinItalic.woff2') format('woff2'),
+		url('/fonts/Qanelas/Qanelas-ThinItalic.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Qanelas Ultra Light";
-  font-weight: 200;
-  font-style: normal;
-  font-display: auto;
-  src: local("Qanelas"),
-    url("/fonts/Qanelas/Qanelas-UltraLight.woff2") format("woff2"),
-    url("/fonts/Qanelas/Qanelas-UltraLight.woff") format("woff");
+	font-family: 'Qanelas Ultra Light';
+	font-weight: 200;
+	font-style: normal;
+	font-display: auto;
+	src: local('Qanelas'), url('/fonts/Qanelas/Qanelas-UltraLight.woff2') format('woff2'),
+		url('/fonts/Qanelas/Qanelas-UltraLight.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Qanelas Ultra Light Italic";
-  font-weight: 200;
-  font-style: normal;
-  font-display: auto;
-  src: local("Qanelas"),
-    url("/fonts/Qanelas/Qanelas-UltraLightItalic.woff2") format("woff2"),
-    url("/fonts/Qanelas/Qanelas-UltraLightItalic.woff") format("woff");
+	font-family: 'Qanelas Ultra Light Italic';
+	font-weight: 200;
+	font-style: normal;
+	font-display: auto;
+	src: local('Qanelas'), url('/fonts/Qanelas/Qanelas-UltraLightItalic.woff2') format('woff2'),
+		url('/fonts/Qanelas/Qanelas-UltraLightItalic.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Qanelas Light";
-  font-weight: 300;
-  font-style: normal;
-  font-display: auto;
-  src: local("Qanelas"),
-    url("/fonts/Qanelas/Qanelas-Light.woff2") format("woff2"),
-    url("/fonts/Qanelas/Qanelas-Light.woff") format("woff");
+	font-family: 'Qanelas Light';
+	font-weight: 300;
+	font-style: normal;
+	font-display: auto;
+	src: local('Qanelas'), url('/fonts/Qanelas/Qanelas-Light.woff2') format('woff2'),
+		url('/fonts/Qanelas/Qanelas-Light.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Qanelas Light Italic";
-  font-weight: 300;
-  font-style: normal;
-  font-display: auto;
-  src: local("Qanelas"),
-    url("/fonts/Qanelas/Qanelas-LightItalic.woff2") format("woff2"),
-    url("/fonts/Qanelas/Qanelas-LightItalic.woff") format("woff");
+	font-family: 'Qanelas Light Italic';
+	font-weight: 300;
+	font-style: normal;
+	font-display: auto;
+	src: local('Qanelas'), url('/fonts/Qanelas/Qanelas-LightItalic.woff2') format('woff2'),
+		url('/fonts/Qanelas/Qanelas-LightItalic.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Qanelas Regular";
-  font-weight: 400;
-  font-style: normal;
-  font-display: auto;
-  src: local("Qanelas"),
-    url("/fonts/Qanelas/Qanelas-Regular.woff2") format("woff2"),
-    url("/fonts/Qanelas/Qanelas-Regular.woff") format("woff");
+	font-family: 'Qanelas Regular';
+	font-weight: 400;
+	font-style: normal;
+	font-display: auto;
+	src: local('Qanelas'), url('/fonts/Qanelas/Qanelas-Regular.woff2') format('woff2'),
+		url('/fonts/Qanelas/Qanelas-Regular.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Qanelas Regular Italic";
-  font-weight: 400;
-  font-style: normal;
-  font-display: auto;
-  src: local("Qanelas"),
-    url("/fonts/Qanelas/Qanelas-RegularItalic.woff2") format("woff2"),
-    url("/fonts/Qanelas/Qanelas-RegularItalic.woff") format("woff");
+	font-family: 'Qanelas Regular Italic';
+	font-weight: 400;
+	font-style: normal;
+	font-display: auto;
+	src: local('Qanelas'), url('/fonts/Qanelas/Qanelas-RegularItalic.woff2') format('woff2'),
+		url('/fonts/Qanelas/Qanelas-RegularItalic.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Qanelas Medium";
-  font-weight: 500;
-  font-style: normal;
-  font-display: auto;
-  src: local("Qanelas"),
-    url("/fonts/Qanelas/Qanelas-Medium.woff2") format("woff2"),
-    url("/fonts/Qanelas/Qanelas-Medium.woff") format("woff");
+	font-family: 'Qanelas Medium';
+	font-weight: 500;
+	font-style: normal;
+	font-display: auto;
+	src: local('Qanelas'), url('/fonts/Qanelas/Qanelas-Medium.woff2') format('woff2'),
+		url('/fonts/Qanelas/Qanelas-Medium.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Qanelas Medium Italic";
-  font-weight: 500;
-  font-style: normal;
-  font-display: auto;
-  src: local("Qanelas"),
-    url("/fonts/Qanelas/Qanelas-MediumItalic.woff2") format("woff2"),
-    url("/fonts/Qanelas/Qanelas-MediumItalic.woff") format("woff");
+	font-family: 'Qanelas Medium Italic';
+	font-weight: 500;
+	font-style: normal;
+	font-display: auto;
+	src: local('Qanelas'), url('/fonts/Qanelas/Qanelas-MediumItalic.woff2') format('woff2'),
+		url('/fonts/Qanelas/Qanelas-MediumItalic.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Qanelas Semi Bold";
-  font-weight: 600;
-  font-style: normal;
-  font-display: auto;
-  src: local("Qanelas"),
-    url("/fonts/Qanelas/Qanelas-SemiBold.woff2") format("woff2"),
-    url("/fonts/Qanelas/Qanelas-SemiBold.woff") format("woff");
+	font-family: 'Qanelas Semi Bold';
+	font-weight: 600;
+	font-style: normal;
+	font-display: auto;
+	src: local('Qanelas'), url('/fonts/Qanelas/Qanelas-SemiBold.woff2') format('woff2'),
+		url('/fonts/Qanelas/Qanelas-SemiBold.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Qanelas Semi Bold Italic";
-  font-weight: 600;
-  font-style: normal;
-  font-display: auto;
-  src: local("Qanelas"),
-    url("/fonts/Qanelas/Qanelas-SemiBoldItalic.woff2") format("woff2"),
-    url("/fonts/Qanelas/Qanelas-SemiBoldItalic.woff") format("woff");
+	font-family: 'Qanelas Semi Bold Italic';
+	font-weight: 600;
+	font-style: normal;
+	font-display: auto;
+	src: local('Qanelas'), url('/fonts/Qanelas/Qanelas-SemiBoldItalic.woff2') format('woff2'),
+		url('/fonts/Qanelas/Qanelas-SemiBoldItalic.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Qanelas Bold";
-  font-weight: 700;
-  font-style: normal;
-  font-display: auto;
-  src: local("Qanelas"),
-    url("/fonts/Qanelas/Qanelas-Bold.woff2") format("woff2"),
-    url("/fonts/Qanelas/Qanelas-Bold.woff") format("woff");
+	font-family: 'Qanelas Bold';
+	font-weight: 700;
+	font-style: normal;
+	font-display: auto;
+	src: local('Qanelas'), url('/fonts/Qanelas/Qanelas-Bold.woff2') format('woff2'),
+		url('/fonts/Qanelas/Qanelas-Bold.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Qanelas Bold Italic";
-  font-weight: 700;
-  font-style: normal;
-  font-display: auto;
-  src: local("Qanelas"),
-    url("/fonts/Qanelas/Qanelas-BoldItalic.woff2") format("woff2"),
-    url("/fonts/Qanelas/Qanelas-BoldItalic.woff") format("woff");
+	font-family: 'Qanelas Bold Italic';
+	font-weight: 700;
+	font-style: normal;
+	font-display: auto;
+	src: local('Qanelas'), url('/fonts/Qanelas/Qanelas-BoldItalic.woff2') format('woff2'),
+		url('/fonts/Qanelas/Qanelas-BoldItalic.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Qanelas Extra Bold";
-  font-weight: 800;
-  font-style: normal;
-  font-display: auto;
-  src: local("Qanelas"),
-    url("/fonts/Qanelas/Qanelas-ExtraBold.woff2") format("woff2"),
-    url("/fonts/Qanelas/Qanelas-ExtraBold.woff") format("woff");
+	font-family: 'Qanelas Extra Bold';
+	font-weight: 800;
+	font-style: normal;
+	font-display: auto;
+	src: local('Qanelas'), url('/fonts/Qanelas/Qanelas-ExtraBold.woff2') format('woff2'),
+		url('/fonts/Qanelas/Qanelas-ExtraBold.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Qanelas Extra Bold Italic";
-  font-weight: 800;
-  font-style: normal;
-  font-display: auto;
-  src: local("Qanelas"),
-    url("/fonts/Qanelas/Qanelas-ExtraBoldItalic.woff2") format("woff2"),
-    url("/fonts/Qanelas-ExtraBoldItalic.woff") format("woff");
+	font-family: 'Qanelas Extra Bold Italic';
+	font-weight: 800;
+	font-style: normal;
+	font-display: auto;
+	src: local('Qanelas'), url('/fonts/Qanelas/Qanelas-ExtraBoldItalic.woff2') format('woff2'),
+		url('/fonts/Qanelas-ExtraBoldItalic.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Qanelas Black";
-  font-weight: 900;
-  font-style: normal;
-  font-display: auto;
-  src: local("Qanelas"),
-    url("/fonts/Qanelas/Qanelas-Black.woff2") format("woff2"),
-    url("/fonts/Qanelas/Qanelas-Black.woff") format("woff");
+	font-family: 'Qanelas Black';
+	font-weight: 900;
+	font-style: normal;
+	font-display: auto;
+	src: local('Qanelas'), url('/fonts/Qanelas/Qanelas-Black.woff2') format('woff2'),
+		url('/fonts/Qanelas/Qanelas-Black.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Qanelas Black Italic";
-  font-weight: 900;
-  font-style: normal;
-  font-display: auto;
-  src: local("Qanelas"),
-    url("/fonts/Qanelas/Qanelas-BlackItalic.woff2") format("woff2"),
-    url("/fonts/Qanelas/Qanelas-BlackItalic.woff") format("woff");
+	font-family: 'Qanelas Black Italic';
+	font-weight: 900;
+	font-style: normal;
+	font-display: auto;
+	src: local('Qanelas'), url('/fonts/Qanelas/Qanelas-BlackItalic.woff2') format('woff2'),
+		url('/fonts/Qanelas/Qanelas-BlackItalic.woff') format('woff');
 }

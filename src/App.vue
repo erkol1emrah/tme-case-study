@@ -1,29 +1,29 @@
 <template>
-  <Header />
-  <RouterView />
-  <Footer />
+	<Header />
+	<RouterView />
+	<Footer />
 </template>
 
 <script>
-import Header from "./components/Header.vue";
-import Footer from "./components/Footer.vue";
+import Header from './components/Header.vue';
+import Footer from './components/Footer.vue';
 
 export default {
-  components: {
-    Header,
-    Footer,
-  },
+	components: {
+		Header,
+		Footer,
+	},
 };
 </script>
 
 <style>
-@import "@/assets/base.css";
+@import '@/assets/base.css';
 
 #app {
-  min-width: 320px;
-  max-width: 1440px;
-  flex-flow: column nowrap;
-  align-items: center;
-  margin: auto;
+	min-width: 320px;
+	max-width: 1440px;
+	flex-flow: column nowrap;
+	align-items: center;
+	margin: auto;
 }
 </style>
