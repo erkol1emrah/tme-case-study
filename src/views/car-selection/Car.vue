@@ -1,6 +1,7 @@
 <template>
 	<div class="car">
-		<div class="circle"></div>
+		<div class="circle" v-if="store.car === id"></div>
+		<div class="circle-hover" v-if="store.car !== id"></div>
 		<div class="check" v-if="store.car === id">
 			<img src="images/check.svg" />
 		</div>
@@ -54,7 +55,15 @@ export default {
 	margin-right: 0px;
 }
 
-.car:hover .circle,
+.car:hover .circle-hover {
+	position: absolute;
+	width: 507px;
+	height: 519px;
+	opacity: 0.06;
+	border: 1px solid var(--black);
+	border-radius: 253.5px;
+}
+
 .car:hover .starting-price,
 .car:hover .button {
 	visibility: visible;
@@ -67,7 +76,6 @@ export default {
 	opacity: 0.06;
 	border: 1px solid var(--black);
 	border-radius: 253.5px;
-	visibility: hidden;
 }
 
 .check {

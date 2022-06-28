@@ -4,6 +4,7 @@ const cars = [
 		model: 'IBIZA',
 		name: 'Ibiza 1.3 Ecotech DSG',
 		image: 'ibiza.png',
+		message: 'Hayalindeki araca dair rengini seç, tarzını hemen yansıt',
 		price: 193500,
 		colors: [
 			{ id: 0, name: 'Rose Red', color: '#B40F14', price: 0 },
@@ -48,6 +49,7 @@ const cars = [
 		model: 'ATECA',
 		name: 'Ateca 1.3 Ecotech DSG',
 		image: 'ateca.png',
+		message: 'Hayalindeki araca dair rengini seç, tarzını hemen yansıt',
 		price: 218000,
 		colors: [
 			{ id: 0, name: 'Brown', color: '#B03D0B' },

@@ -16,4 +16,9 @@ export const store = reactive({
 			this.image = cars[this.car].image;
 		}
 	},
+	selectColor(value) {
+		if (this.color !== value) {
+			this.color = value;
+		}
+	},
 });
