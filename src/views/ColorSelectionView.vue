@@ -28,8 +28,7 @@ import cars from '../data/cars';
 import { store } from '../store';
 
 export default {
-	name: 'Car',
-	props: ['id'],
+	name: 'ColorSelectionView',
 	data() {
 		return {
 			store,

@@ -34,7 +34,7 @@ export default {
 		};
 	},
 	methods: {
-		selectCar(id) {
+		selectCar() {
 			store.selectCar(this.$props.id);
 		},
 	},

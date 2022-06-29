@@ -3,7 +3,7 @@ import CarSelectionView from '../views/CarSelectionView.vue';
 import ColorSelectionView from '../views/ColorSelectionView.vue';
 import PackSelectionView from '../views/PackSelectionView.vue';
 import SummaryView from '../views/SummaryView.vue';
-import cars from '../data/cars';
+import { store } from '../store';
 
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,25 +12,42 @@ const router = createRouter({
 			path: '/',
 			name: 'select-car',
 			component: CarSelectionView,
-			props: { cars: cars },
 		},
 		{
 			path: '/select-color',
 			name: 'select-color',
 			component: ColorSelectionView,
-			props: { cars: cars },
+			beforeEnter(to, from, next) {
+				if (store.car !== null) {
+					next();
+				} else {
+					next('/');
+				}
+			},
 		},
 		{
 			path: '/select-packs',
 			name: 'select-packs',
 			component: PackSelectionView,
-			props: { cars: cars },
+			beforeEnter(to, from, next) {
+				if (store.color !== null) {
+					next();
+				} else {
+					next('/select-color');
+				}
+			},
 		},
 		{
 			path: '/summary',
 			name: 'summary',
 			component: SummaryView,
-			props: { cars: cars },
+			beforeEnter(to, from, next) {
+				if (store.color !== null) {
+					next();
+				} else {
+					next('/select-color');
+				}
+			},
 		},
 	],
 });

@@ -1,12 +1,15 @@
 <template>
 	<div class="footer">
-		<div class="car">
-			<NewTag />
-			<CarPhoto />
+		<div class="gradient"></div>
+		<div class="background">
+			<div class="car">
+				<NewTag />
+				<CarPhoto />
+			</div>
+			<Separator />
+			<TotalPrice />
+			<Button />
 		</div>
-		<Separator />
-		<TotalPrice />
-		<Button />
 	</div>
 </template>
 
@@ -31,6 +34,32 @@ export default {
 
 <style scoped>
 .footer {
+	position: relative;
+	width: 939px;
+	height: 95px;
+	align-items: center;
+	margin-top: 20px;
+	margin-bottom: 71px;
+}
+
+.gradient {
+	position: absolute;
+	width: 1114px;
+	height: 283px;
+	background: linear-gradient(
+		180deg,
+		rgba(255, 255, 255, 0.0001) 0%,
+		rgba(255, 255, 255, 0.955857) 33.85%,
+		#ffffff 100%
+	);
+	z-index: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.background {
+	position: absolute;
 	width: 939px;
 	height: 95px;
 	align-items: center;
@@ -39,6 +68,7 @@ export default {
 	box-shadow: 0px 2px 70px rgba(0, 0, 0, 0.0703671);
 	margin-top: 20px;
 	margin-bottom: 71px;
+	z-index: 1;
 }
 
 .car {

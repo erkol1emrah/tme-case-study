@@ -28,8 +28,15 @@
 </template>
 
 <script>
+import { store } from '../../store';
+
 export default {
 	name: 'Menu',
+	data() {
+		return {
+			store,
+		};
+	},
 };
 </script>
 

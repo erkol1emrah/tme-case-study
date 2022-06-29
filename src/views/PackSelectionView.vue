@@ -1,11 +1,53 @@
 <template>
-	<div class="pack-selection">SELECT PACKS</div>
+	<div class="pack-selection">
+		<div class="message">Seçtiğin araca ait özellikler, konforun ve yaşam stilini belirler.</div>
+		<div class="wrapper">
+			<Pack class="color" v-for="pack in packs" :key="pack.id" :id="pack.id" />
+		</div>
+	</div>
 </template>
 
-<style>
+<script>
+import Pack from './pack-selection/Pack.vue';
+import { store } from '../store';
+import cars from '../data/cars';
+
+export default {
+	components: { Pack },
+	data() {
+		return {
+			packs: cars[store.car].packs,
+		};
+	},
+};
+</script>
+
+<style scoped>
 .pack-selection {
-	height: 604px;
+	flex-flow: column nowrap;
+	width: 993px;
+	height: 580px;
+	max-height: 604px;
 	align-items: center;
-	justify-content: center;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	margin-bottom: 24px;
+}
+
+.wrapper {
+	width: 940px;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin-bottom: 34px;
+}
+
+.message {
+	width: 224px;
+	font-family: 'Qanelas Medium';
+	font-size: 15px;
+	line-height: 18px;
+	text-align: center;
+	margin-top: 52px;
+	margin-bottom: 34px;
 }
 </style>

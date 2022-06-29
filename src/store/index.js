@@ -21,4 +21,15 @@ export const store = reactive({
 			this.color = value;
 		}
 	},
+	selectPack(value) {
+		this.packs = [...this.packs, value];
+		this.total += cars[this.car].packs[value].price;
+	},
+	deselectPack(value) {
+		const index = this.packs.indexOf(value);
+		if (index > -1) {
+			this.packs.splice(index, 1); // 2nd parameter means remove one item only
+		}
+		this.total -= cars[this.car].packs[value].price;
+	},
 });

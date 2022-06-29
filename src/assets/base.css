@@ -6,7 +6,7 @@
 }
 
 :root {
-	--color-background: var(--light-gray);
+	--color-background: var(--white);
 	--color-text: var(--black);
 
 	--section-gap: 160px;
