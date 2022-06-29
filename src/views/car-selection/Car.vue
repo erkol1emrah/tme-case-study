@@ -3,7 +3,7 @@
 		<div class="circle" v-if="store.car === id"></div>
 		<div class="circle-hover" v-if="store.car !== id"></div>
 		<div class="check" v-if="store.car === id">
-			<img src="images/check.svg" />
+			<img src="/images/check.svg" />
 		</div>
 		<div class="name">{{ cars[id].model }}</div>
 		<div class="photo">

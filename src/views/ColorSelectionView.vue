@@ -14,7 +14,7 @@
 				:key="color.id"
 			>
 				<div class="check" v-if="store.color === color.id">
-					<img src="images/check.svg" />
+					<img src="/images/check.svg" />
 				</div>
 				<div class="border" v-if="store.color === color.id"></div>
 				<div class="border-hover" v-if="store.color !== color.id"></div>

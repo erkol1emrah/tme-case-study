@@ -11,7 +11,7 @@
 			TL
 		</div>
 		<div class="check">
-			<img src="images/check.svg" v-if="store.packs.includes(id)" />
+			<img src="/images/check.svg" v-if="store.packs.includes(id)" />
 		</div>
 	</div>
 </template>

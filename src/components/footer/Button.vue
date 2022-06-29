@@ -4,8 +4,8 @@
 		<p v-if="$route.name === 'select-color'">ACCESSORIES</p>
 		<p v-if="$route.name === 'select-packs'">SUMMARY</p>
 		<p v-if="$route.name === 'summary'">BUY NOW</p>
-		<img v-if="$route.name !== 'summary'" src="images/arrow.svg" class="arrow" />
-		<img v-if="$route.name === 'summary'" src="images/shopping-cart.svg" class="shopping-cart" />
+		<img v-if="$route.name !== 'summary'" src="/images/arrow.svg" class="arrow" />
+		<img v-if="$route.name === 'summary'" src="/images/shopping-cart.svg" class="shopping-cart" />
 	</div>
 </template>
 
