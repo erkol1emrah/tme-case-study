@@ -22,4 +22,17 @@ export default {
 	align-items: center;
 	justify-content: center;
 }
+
+@media (max-width: 992px) {
+	.car-selection {
+		width: 600px;
+	}
+}
+
+@media (max-width: 768px) {
+	.car-selection {
+		flex-flow: column nowrap;
+		height: auto;
+	}
+}
 </style>

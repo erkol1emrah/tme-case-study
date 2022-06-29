@@ -11,7 +11,15 @@
 		</div>
 		<div class="starting-price">
 			<p>
-				<strong>{{ cars[id].price }} TL</strong>'den başlayan
+				<strong
+					>{{
+						cars[id].price
+							.toFixed(2)
+							.replace(/\d(?=(\d{3})+\.)/g, '$&.')
+							.slice(0, -3)
+					}}
+					TL</strong
+				>'den başlayan
 			</p>
 			<p>fiyatlarla</p>
 			<p>&nbsp;</p>
@@ -51,8 +59,25 @@ export default {
 	margin-right: 60px;
 }
 
+@media (max-width: 992px) {
+	.car {
+		width: calc(507px * 0.7);
+		height: calc(519px * 0.7);
+	}
+}
+
+@media (max-width: 768px) {
+	.car {
+		width: 507px;
+		height: 519px;
+		margin-right: 0;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
+
 .car:last-child {
-	margin-right: 0px;
+	margin-right: 0;
 }
 
 .car:hover .circle-hover {
@@ -62,6 +87,20 @@ export default {
 	opacity: 0.06;
 	border: 1px solid var(--black);
 	border-radius: 253.5px;
+}
+
+@media (max-width: 992px) {
+	.car:hover .circle-hover {
+		width: calc(507px * 0.7);
+		height: calc(519px * 0.7);
+	}
+}
+
+@media (max-width: 768px) {
+	.car:hover .circle-hover {
+		width: 507px;
+		height: 519px;
+	}
 }
 
 .car:hover .starting-price,
@@ -78,6 +117,20 @@ export default {
 	border-radius: 253.5px;
 }
 
+@media (max-width: 992px) {
+	.circle {
+		width: calc(507px * 0.7);
+		height: calc(519px * 0.7);
+	}
+}
+
+@media (max-width: 768px) {
+	.circle {
+		width: 507px;
+		height: 519px;
+	}
+}
+
 .check {
 	position: absolute;
 	width: 33px;
@@ -89,6 +142,20 @@ export default {
 	top: 29px;
 	right: 94px;
 	user-select: none;
+}
+
+@media (max-width: 992px) {
+	.check {
+		top: 19px;
+		right: 40px;
+	}
+}
+
+@media (max-width: 768px) {
+	.check {
+		top: 29px;
+		right: 94px;
+	}
 }
 
 .check img {
@@ -108,11 +175,33 @@ export default {
 	z-index: -1;
 }
 
+@media (max-width: 992px) {
+	.name {
+		font-size: 100px;
+		margin-top: 10px;
+	}
+}
+
+@media (max-width: 768px) {
+	.name {
+		font-size: 138.96px;
+		margin-top: 103px;
+	}
+}
+
 .photo {
 	width: 440.64px;
 	height: 200.16px;
 	margin-top: -101.28px;
 	user-select: none;
+}
+
+@media (max-width: 992px) {
+	.photo {
+		width: calc(440.64px * 0.7);
+		height: calc(200.16px * 0.7);
+		margin-top: -101.28px;
+	}
 }
 
 .starting-price {
@@ -145,6 +234,7 @@ export default {
 	margin-top: 8px;
 	border: none;
 	z-index: 0;
+	cursor: pointer;
 	visibility: hidden;
 }
 </style>

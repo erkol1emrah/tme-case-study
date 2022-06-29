@@ -1,7 +1,15 @@
 <template>
 	<div class="total-price" v-if="store.car !== null">
 		<p>TOTAL</p>
-		<p v-if="store.total !== null">{{ store.total }} TL</p>
+		<p v-if="store.total !== null">
+			{{
+				store.total
+					.toFixed(2)
+					.replace(/\d(?=(\d{3})+\.)/g, '$&.')
+					.slice(0, -3)
+			}}
+			TL
+		</p>
 		<p v-if="store.total === null">&nbsp;</p>
 	</div>
 </template>
@@ -26,6 +34,25 @@ export default {
 	height: 100%;
 	justify-content: center;
 	padding: 29px;
+}
+
+@media (max-width: 992px) {
+	.total-price {
+		width: max-content;
+	}
+}
+
+@media (max-width: 768px) {
+	.total-price {
+		width: max-content;
+	}
+}
+
+@media (max-width: 576px) {
+	.total-price {
+		width: 45%;
+		padding: 10px;
+	}
 }
 
 .total-price p:first-child {

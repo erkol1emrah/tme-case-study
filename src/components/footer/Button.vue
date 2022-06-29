@@ -58,7 +58,29 @@ export default {
 	margin-left: auto;
 	padding-left: 39px;
 	padding-right: 33px;
+	cursor: pointer;
 	user-select: none;
+}
+
+@media (max-width: 768px) {
+	.button {
+		width: 190px;
+		padding-left: 29px;
+		padding-right: 23px;
+	}
+}
+
+@media (max-width: 576px) {
+	.button {
+		width: 20%;
+		padding-left: 0;
+		padding-right: 0;
+		justify-content: center;
+	}
+
+	.button p {
+		display: none;
+	}
 }
 
 .arrow {

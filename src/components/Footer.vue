@@ -42,6 +42,12 @@ export default {
 	margin-bottom: 71px;
 }
 
+@media (max-width: 992px) {
+	.footer {
+		width: 90%;
+	}
+}
+
 .gradient {
 	position: absolute;
 	width: 1114px;
@@ -60,14 +66,12 @@ export default {
 
 .background {
 	position: absolute;
-	width: 939px;
+	width: 100%;
 	height: 95px;
 	align-items: center;
 	background-color: var(--white);
 	border-radius: 11px;
 	box-shadow: 0px 2px 70px rgba(0, 0, 0, 0.0703671);
-	margin-top: 20px;
-	margin-bottom: 71px;
 	z-index: 1;
 }
 
@@ -76,5 +80,11 @@ export default {
 	align-items: center;
 	width: 166px;
 	height: 100%;
+}
+
+@media (max-width: 576px) {
+	.car {
+		width: 35%;
+	}
 }
 </style>

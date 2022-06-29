@@ -1,7 +1,15 @@
 <template>
 	<div class="pack" :class="{ selected: store.packs.includes(id) }" @click="handleClick">
 		<div class="name">{{ cars[store.car].packs[id].name }}</div>
-		<div class="price">{{ cars[store.car].packs[id].price }} TL</div>
+		<div class="price">
+			{{
+				cars[store.car].packs[id].price
+					.toFixed(2)
+					.replace(/\d(?=(\d{3})+\.)/g, '$&.')
+					.slice(0, -3)
+			}}
+			TL
+		</div>
 		<div class="check">
 			<img src="images/check.svg" v-if="store.packs.includes(id)" />
 		</div>
@@ -48,17 +56,24 @@ export default {
 	margin-bottom: 20px;
 	border: 1px solid #f2f2f2;
 	border-radius: 11px;
+	cursor: pointer;
+}
+
+@media (max-width: 768px) {
+	.pack {
+		width: calc(50% - 10px);
+	}
+}
+
+@media (max-width: 576px) {
+	.pack {
+		width: 100%;
+	}
 }
 
 .pack.selected {
-	flex-flow: column nowrap;
-	width: 300px;
-	height: 283px;
-	align-items: center;
-	margin-bottom: 20px;
 	background: #292929;
 	border: 1px solid #979797;
-	border-radius: 11px;
 }
 
 .pack:hover {

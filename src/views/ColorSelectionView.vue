@@ -77,9 +77,14 @@ export default {
 }
 
 .photo {
-	height: 250px;
 	width: 550px;
+	height: 250px;
 	margin-top: 102px;
+}
+
+.photo img {
+	width: 100%;
+	height: auto;
 }
 
 .colors {
@@ -93,6 +98,7 @@ export default {
 	height: 33px;
 	border-radius: 50%;
 	margin-right: 14px;
+	cursor: pointer;
 }
 
 .color:hover .border-hover {
@@ -140,5 +146,35 @@ export default {
 	top: -5px;
 	left: -5px;
 	z-index: 1;
+}
+
+@media (max-width: 768px) {
+	.name {
+		font-size: 240px;
+		top: 28px;
+	}
+
+	.photo {
+		width: 100%;
+		height: auto;
+		margin-top: 112px;
+	}
+}
+
+@media (max-width: 576px) {
+	.colors {
+		margin-bottom: 52px;
+	}
+
+	.name {
+		font-size: 180px;
+		top: 24px;
+	}
+
+	.photo {
+		width: 100%;
+		height: auto;
+		margin-top: 122px;
+	}
 }
 </style>

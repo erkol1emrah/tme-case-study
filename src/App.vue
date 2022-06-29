@@ -20,7 +20,7 @@ export default {
 @import '@/assets/base.css';
 
 #app {
-	min-width: 320px;
+	min-width: 360px;
 	max-width: 1440px;
 	flex-flow: column nowrap;
 	align-items: center;

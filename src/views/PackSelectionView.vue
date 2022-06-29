@@ -26,12 +26,17 @@ export default {
 .pack-selection {
 	flex-flow: column nowrap;
 	width: 993px;
-	height: 580px;
+	height: 604px;
 	max-height: 604px;
 	align-items: center;
 	overflow-x: hidden;
 	overflow-y: scroll;
-	margin-bottom: 24px;
+}
+
+@media (max-width: 992px) {
+	.pack-selection {
+		width: 90%;
+	}
 }
 
 .wrapper {
@@ -39,6 +44,18 @@ export default {
 	flex-flow: row wrap;
 	justify-content: space-between;
 	margin-bottom: 34px;
+}
+
+@media (max-width: 992px) {
+	.wrapper {
+		width: 620px;
+	}
+}
+
+@media (max-width: 768px) {
+	.wrapper {
+		width: 100%;
+	}
 }
 
 .message {

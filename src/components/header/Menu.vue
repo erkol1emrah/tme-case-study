@@ -68,6 +68,18 @@ export default {
 	opacity: 1;
 }
 
+@media (max-width: 768px) {
+	.item {
+		margin-right: 30px;
+	}
+}
+
+@media (max-width: 576px) {
+	.item {
+		margin-right: 10px;
+	}
+}
+
 .underline {
 	width: 14px;
 	min-width: 14px;
