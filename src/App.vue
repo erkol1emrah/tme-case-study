@@ -25,5 +25,6 @@ export default {
 	flex-flow: column nowrap;
 	align-items: center;
 	margin: auto;
+    overflow-x: hidden;
 }
 </style>
