@@ -132,7 +132,7 @@ export default {
 
 .photo img {
 	width: 100%;
-	height: 100%;
+	height: auto;
 }
 
 @media (max-width: 992px) {

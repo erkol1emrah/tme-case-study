@@ -65,7 +65,12 @@ export default {
 }
 
 .item:hover {
-	opacity: 1;
+    opacity: 1;
+}
+
+.item:active {
+    color: var(--black);
+    opacity: 0.19;
 }
 
 @media (max-width: 768px) {
