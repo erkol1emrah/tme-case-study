@@ -201,24 +201,15 @@ export default {
 }
 
 .photo img {
-    width: 440.64px;
-    min-width: 440.64px;
-    max-width: 440.64px;
-    height: 200.16px;
-    min-height: 200.16px;
-    max-height: 200.16px;
+    width: 100%;
+    height: auto;
     user-select: none;
 }
 
 @media (max-width: 992px) {
 	.photo {
-		width: calc(440.64px * 0.7);
-		min-width: calc(440.64px * 0.7);
-		max-width: calc(440.64px * 0.7);
-		height: calc(200.16px * 0.7);
-		min-height: calc(200.16px * 0.7);
-		max-height: calc(200.16px * 0.7);
-		margin-top: -101.28px;
+		width: 308.448px;
+		height: auto;
 	}
 }
 
